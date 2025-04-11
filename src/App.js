@@ -9,17 +9,15 @@ import FAQ from './components/FAQ';
 import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
 import Dashboard from './components/Dashboard';
+import MoodBoard from './components/MoodBoard';
 import './App.css';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/dashboard" element={
-          <>
-            <Dashboard />
-          </>
-        } />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/moodboard" element={<MoodBoard />} />
         <Route path="/" element={
           <div className="App">
             <Header />
